@@ -59,6 +59,8 @@ Attributes
   `/var/www/munin` on other platforms.
 * `node['munin']['web_server']` - supports apache or nginx, default is
   "apache"
+* `node['munin']['public_domian']` - allows you to set a custom public
+  domain that ignores the default munin.#{env}.#{node[public_domain]}
 * `node['munin']['max_processes']` - Maximum number of simultaneous
   Munin-update processes. When not set, munin will use as many as
   necessary. Default is to use as many as necessary.

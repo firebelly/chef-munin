@@ -23,6 +23,7 @@ default['munin']['server_auth_method'] = 'openid'
 
 default['munin']['web_server'] = 'apache'
 default['munin']['web_server_port'] = 80
+default['munin']['public_domain'] = nil
 
 case node['platform']
 when "arch"
